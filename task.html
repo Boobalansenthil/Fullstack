@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Session Feedback</title>
+    <link rel="stylesheet" href="task .css">
+</head>
+<body>
+
+<section class="wrapper">
+    <div class="container">
+        <h2>Session Feedback</h2>
+        <p class="tagline">Share your learning experience</p>
+
+        <form id="feedbackForm">
+            <div class="field">
+                <label>Student Name</label>
+                <input type="text" id="name" placeholder="Your name">
+            </div>
+
+            <div class="field">
+                <label>Email Address</label>
+                <input type="email" id="email" placeholder="example@mail.com">
+            </div>
+
+            <div class="field">
+                <label>Session Rating</label>
+                <select id="rating">
+                    <option value="">Choose</option>
+                    <option value="1">1 - Poor</option>
+                    <option value="2">2 - Fair</option>
+                    <option value="3">3 - Average</option>
+                    <option value="4">4 - Good</option>
+                    <option value="5">5 - Excellent</option>
+                </select>
+            </div>
+
+            <div class="field">
+                <label>Your Comments</label>
+                <textarea id="comments" rows="4" placeholder="Write at least 10 characters"></textarea>
+            </div>
+
+            <button type="submit">Submit</button>
+            <p class="error" id="errorMsg"></p>
+        </form>
+
+        <div class="average" id="averageRating"></div>
+        <div class="feedback-list" id="feedbackList"></div>
+    </div>
+</section>
+
+<script src="task.js"></script>
+</body>
+</html>
